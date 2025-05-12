@@ -1,103 +1,79 @@
 {
   "Ruby Class": {
     "prefix": "class",
-    "body": ["class $1", "  $2", "end"],
+    "body": ["class $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby class block"
   },
   "Ruby Module": {
     "prefix": "module",
-    "body": ["module $1", "  $2", "end"],
+    "body": ["module $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby module block"
   },
   "Ruby Def": {
     "prefix": "def",
-    "body": ["def $1", "  $2", "end"],
+    "body": ["def $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby method"
   },
   "Ruby If": {
     "prefix": "if",
-    "body": ["if $1", "  $2", "end"],
+    "body": ["if $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby if block"
   },
   "Ruby Unless": {
     "prefix": "unless",
-    "body": ["unless $1", "  $2", "end"],
+    "body": ["unless $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby unless block"
   },
-  "Ruby Else": {
-    "prefix": "else",
-    "body": ["else", "  $1"],
-    "scope": "ruby",
-    "description": "Creates a Ruby else block"
-  },
   "Ruby Elsif": {
     "prefix": "elsif",
-    "body": ["elsif $1", "  $2"],
+    "body": ["if $1", "elsif", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby elsif block"
   },
-  "Ruby Do": {
-    "prefix": "do",
-    "body": ["do |$1|", "  $2", "end"],
+  "Ruby Else": {
+    "prefix": "else",
+    "body": ["if $1", "else", "end"],
     "scope": "ruby",
-    "description": "Creates a Ruby do block"
+    "description": "Creates a Ruby else block"
   },
   "Ruby Begin": {
     "prefix": "begin",
-    "body": ["begin", "  $1", "end"],
+    "body": ["begin", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby begin block"
   },
-  "Ruby Rescue": {
-    "prefix": "rescue",
-    "body": ["rescue $1", "  $2"],
-    "scope": "ruby",
-    "description": "Creates a Ruby rescue block"
-  },
-  "Ruby Ensure": {
-    "prefix": "ensure",
-    "body": ["ensure", "  $1"],
-    "scope": "ruby",
-    "description": "Creates a Ruby ensure block"
-  },
   "Ruby Case": {
     "prefix": "case",
-    "body": ["case $1", "when $2", "  $3", "end"],
+    "body": ["case $1", "when", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby case block"
   },
-  "Ruby When": {
-    "prefix": "when",
-    "body": ["when $1", "  $2"],
-    "scope": "ruby",
-    "description": "Creates a Ruby when block"
-  },
   "Ruby While": {
     "prefix": "while",
-    "body": ["while $1", "  $2", "end"],
+    "body": ["while $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby while block"
   },
   "Ruby Until": {
     "prefix": "until",
-    "body": ["until $1", "  $2", "end"],
+    "body": ["until $1", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby until block"
   },
   "Ruby For": {
     "prefix": "for",
-    "body": ["for $1 in $2", "  $3", "end"],
+    "body": ["for $1 in $2 do", "end"],
     "scope": "ruby",
     "description": "Creates a Ruby for block"
   },
   "Ruby Block": {
     "prefix": "blk",
-    "body": ["$1 do |$2|", "  $3", "end"],
+    "body": ["$1 do ||", "end"],
     "scope": "ruby",
     "description": "Creates a generic Ruby do/end block"
   }
