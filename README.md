@@ -1,4 +1,4 @@
-# My Zed Personal Configuration
+# My Personal Zed Configuration
 
 This repository contains my personal configuration files and snippets for the [Zed Editor](https://zed.dev/).
 
